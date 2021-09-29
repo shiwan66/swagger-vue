@@ -6,7 +6,11 @@
   "scripts": {
     "gen:api": "node example/create_api/index.js",
     "gen:yaml": "node example/create_yaml/index.js",
-    "gen:md": "node example/create_md/index.js"
+    "gen:md": "node example/create_md/index.js",
+    "gen2:api": "node client/create_api/index.js",
+    "gen2:yaml": "node client/create_yaml/index.js",
+    "gen2:md": "node client/create_md/index.js",
+    "build": "npm run gen2:api && npm run gen2:md"
   },
   "repository": {
     "type": "git",
